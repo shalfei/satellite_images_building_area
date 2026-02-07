@@ -139,7 +139,7 @@ st.set_page_config(page_title="Building AI Scan", layout="wide")
 st.title("🛰️ Анализ площади застройки")
 st.markdown("**Инструмент для расчета площади застройки по спутниковому или аэрофотоснимку**")
 
-uploaded_file = st.sidebar.file_uploader("Загрузите спутниковый снимок", type=["jpg", "jpeg", "png"])
+uploaded_file = st.sidebar.file_uploader("Загрузите спутниковый снимок", type=["jpg", "jpeg", "png", "tif"])
 model_path = SEG_MODEL_PATH
 
 if uploaded_file:
