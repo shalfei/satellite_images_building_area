@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  building-ai-scan:
+    build: .
+    container_name: tractor_app
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./weights:/app/weights  # Пробрасываем веса моделей внутрь
+    restart: always
